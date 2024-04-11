@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>calc</h2>
+    <input id="display" readonly>
+    <div class="grid-container">
+        <button onclick="addDisplay('7')" class="grid-item">7</button>
+        <button onclick="addDisplay('8')" class="grid-item">8</button>
+        <button onclick="addDisplay('9')" class="grid-item">9</button>
+        <button onclick="delDisplay()" class="other-item del">DEL</button>
+        <button onclick="addDisplay('4')" class="grid-item">4</button>
+        <button onclick="addDisplay('5')" class="grid-item">5</button>
+        <button onclick="addDisplay('6')" class="grid-item">6</button>
+        <button onclick="addDisplay(' + ')" class="grid-item">+</button>
+        <button onclick="addDisplay('1')" class="grid-item">1</button>
+        <button onclick="addDisplay('2')" class="grid-item">2</button>
+        <button onclick="addDisplay('3')" class="grid-item">3</button>
+        <button onclick="addDisplay(' - ')" class="grid-item">-</button>
+        <button onclick="addDisplay('.')" class="grid-item">.</button>
+        <button onclick="addDisplay('0')" class="grid-item">0</button>
+        <button onclick="addDisplay(' / ')" class="grid-item">/</button>
+        <button onclick="addDisplay(' x ')" class="grid-item">x</button>
+        <button onclick="resetDisplay()" class="other-item reset">RESET</button>
+        <button onclick="calculate()" class="submit">=</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
